@@ -4,10 +4,10 @@ import glob
 
 image_properties = dict()
 parts_of_image = dict()
-IMAGE_WIDTH = int(input("Введите ширину кусочка картинки: "))
-IMAGE_HEIGHT = int(input("Введите высоту кусочка картинки: "))
+IMAGE_WIDTH = int(input("Введите ширину кусочка картинки: "))                               #хороший вариант 10
+IMAGE_HEIGHT = int(input("Введите высоту кусочка картинки: "))                              #хороший вариант 10
 
-file = input("Введите название главной картики: ")
+file = input("Введите название главной картики: ")                                          #хороший вариант 4
 main_image = Image.open("main_photo/" + file + ".jpg")
 parts_of_image = photomosaics.image_splitting(main_image, IMAGE_WIDTH, IMAGE_HEIGHT)
 
